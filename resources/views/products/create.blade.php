@@ -32,9 +32,20 @@
         </div>
 
         <div class="form-group">
-            <label for="buyer">Buyer:</label>
-            <input type="text" id="buyer" name="buyer" class="form-control" required>
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" class="form-control" required>
         </div>
+
+        <div class="form-group">
+            <label for="buyer_id">Buyer:</label>
+            <select id="buyer_id" name="buyer_id" class="form-control" required>
+                <option value="">Выберите покупателя</option>
+                @foreach($buyers as $buyer)
+                    <option value="{{ $buyer->id }}">{{ $buyer->name }}</option>
+                @endforeach
+            </select>
+        </div>
+        
 
         <div class="form-group">
             <label for="seller">Seller:</label>

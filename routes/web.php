@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BuyerController;
 
 
 
@@ -18,4 +19,6 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::resource('products', \App\Http\Controllers\ProductController::class);
+Route::resource('customers', \App\Http\Controllers\CustomerController::class);
+Route::resource('buyers', \App\Http\Controllers\BuyerController::class);
 

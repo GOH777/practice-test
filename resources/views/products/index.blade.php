@@ -42,7 +42,7 @@
                     <td>{{ $product->name }}</td>
                     <td>{{ $product->description }}</td>
                     <td>{{ $product->status }}</td>
-                    <td>{{ $product->buyer }}</td>
+                    <td>{{ $product->buyer->name}}</td>
                     <td>{{ $product->seller }}</td>
                     <td>
                         <a href="{{ route('products.edit', $product->id) }}" class="btn btn-warning btn-sm">Edit</a>
